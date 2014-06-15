@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'products/create'
+  devise_for :users
+  get 'products/index'
+  get 'products' => 'products#index'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
