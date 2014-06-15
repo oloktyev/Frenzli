@@ -1,0 +1,1 @@
+Frenzli.ProductsController = Ember.ArrayController.extend({});

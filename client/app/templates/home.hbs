@@ -1,0 +1,20 @@
+<header>
+    <h1>Frenzli</h1>
+    <nav>
+        {{#link-to 'home.news'}}Новини{{/link-to}}
+        {{#link-to 'home.blog'}}Блог{{/link-to}}
+    </nav>
+</header>
+<aside>
+    <header>Categories:</header>
+    <nav>
+        {{#view Frenzli.TreeView controllerBinding="categoriesController" contentBinding="categoriesController"}}
+        {{/view}}
+    </nav>
+</aside>
+<section>
+    {{outlet}}
+</section>
+<footer>
+    contact us...
+</footer>

@@ -1,0 +1,8 @@
+{{#if view.content.hasChildren}}
+    {{#dropdown-list title=view.content.name model=view.content type="link" action="routeTo"}}
+        {{#view Frenzli.TreeView filterParamBinding="view.model.id"}}
+        {{/view}}
+    {{/dropdown-list}}
+{{else}}
+    {{#link-to 'category' view.content.id}}{{view.content.name}}{{/link-to}}
+{{/if}}

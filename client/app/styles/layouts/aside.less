@@ -1,0 +1,20 @@
+aside {
+    &>header {
+        padding: 10px 0;
+    }
+    &>nav {
+        padding: 10px 0;
+        li {
+            padding: 10px 0;
+            position: relative;
+            background-color: yellow;
+            ul {
+                position: absolute;
+                top:0;
+                right: -100%;
+                width: 100%;
+                border: 1px solid @menuMainBorder;
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+<button type="button" 
+    {{bind-attr class=":btn :dropdownToggle btnClassName"}}>
+        {{title}}
+        <span class="caret"></span>
+</button>
+{{#if isDropdownVisible}}
+    {{yield}}
+{{/if}}
