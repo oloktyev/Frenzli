@@ -3,20 +3,22 @@ Frenzli.BreadcrumbsController = Ember.Controller.extend({
 
   breadContent: function() {
     var routes = Frenzli.get("Router.router.currentHandlerInfos");
-    var tailRoute = routes[routes.length - 1];
+    var tailRoute = routes;
+    tailRoute = tailRoute.slice(1, tailRoute.length - 1);
     var segments = $.map(tailRoute, function(route) {
-      if(route.isDynamic && route.context) {
-        name = route.context.get("id");
-        context = route.context
-      } else {
-        dotIndex = _.lastIndexOf(route.name, '.')+1;
-        name = Ember.String.capitalize(route.name.slice(dotIndex));
+        var context, name;
+        if(route.isDynamic && route.context) {
+            name = route.context.get("id");
+            context = route.context
+        } else {
+            var dotIndex = route.name.lastIndexOf('.') + 1;
+            name = Ember.String.capitalize(route.name.slice(dotIndex));
         }
-      return {
-        name: name,
-        routePath: route.name,
-        context: context
-      }
+        return {
+            name: name,
+            routePath: route.name,
+            context: context
+        }
     })
     return segments;
   }.property("controllers.application.currentPath"),
