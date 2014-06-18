@@ -1,13 +1,16 @@
 class CategoriesController < ApplicationController
   def index
     @categories = Category.includes(:parent)
+    render :json => @categories
+ 
+    # render :json => @categories.to_json(
+    #     :include => [
+    #         { :category_group => {:only => :title} },
+    #         :parent,
+    #         :child_categories => {:only => :id}
+    #     ],
+    #     :except => [:category_group_id, :created_at, :updated_at, :is_active])
 
-    render :json => @categories.to_json(
-        :include => [
-            { :category_group => {:only => :title} },
-            :parent
-        ],
-        :except => [:category_group_id, :created_at, :updated_at])
   end
 
   def show
