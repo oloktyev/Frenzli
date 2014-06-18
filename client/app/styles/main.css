@@ -357,50 +357,72 @@ ul li {
   font-family: "DearJoe";
   src: url("../../fonts/Dear_Joe.ttf");
 }
+@font-face {
+  font-family: "Corinthia";
+  src: url("../../fonts/Euroscript_Pro.otf");
+}
 /** fonts **/
 * {
   box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+body {
+  font-size: 1em;
 }
 html,
 body {
   width: 100%;
   height: 100%;
 }
-body > div > header {
+body > .home {
+  height: 100%;
+}
+.title {
+  color: #273631;
+  font-family: Corinthia;
+  font-size: 2em;
+}
+.title.active {
+  color: #BCC935;
+}
+.page > header {
   width: 100%;
   padding: 20px 10px;
 }
-body > div > aside {
+.page > aside {
   float: left;
   padding: 10px;
-  width: 30%;
-  max-width: 220px;
+  width: 220px;
 }
-body > div > section {
+.page > section {
+  margin-left: 220px;
   padding: 10px;
 }
-body > div > footer {
+.page > footer {
   padding: 10px;
   width: 100%;
   clear: left;
 }
-aside > header {
+.page > aside > header {
   padding: 10px 0;
 }
-aside > nav {
-  padding: 10px 0;
-}
-aside > nav li {
-  padding: 10px 0;
+.page > aside > nav li {
   position: relative;
-  background-color: yellow;
+  padding-left: 10px;
 }
-aside > nav li ul {
+.page > aside > nav li button {
+  width: 100%;
+  text-align: left;
+}
+.page > aside > nav li ul {
   position: absolute;
   top: 0;
   right: -100%;
-  width: 100%;
+  min-width: 100%;
   border: 1px solid #cccccc;
+  background-color: #ffffff;
 }
 button.linkBtn,
 a {
@@ -414,14 +436,18 @@ button.linkBtn:hover,
 a:hover {
   cursor: pointer;
 }
-body {
-  background-image: url("../../images/backgound_1024_780.jpg");
-  background-size: 100% 100%;
+button.linkBtn:focus,
+a:focus {
+  outline: none;
 }
-body header {
+body {
+  /* background-image: url(@homeBgImage);
+    background-size: 100% 100%; */
+}
+.page > header {
   overflow: hidden;
 }
-body header h1 {
+.page > header h1 {
   font-family: OldStamp;
   color: #273631;
   position: relative;
@@ -430,13 +456,25 @@ body header h1 {
   margin: 0;
   transform: rotate(-12deg);
 }
-body header nav {
+.page > header nav {
+  clear: left;
   margin-left: 230px;
-  font-size: 2em;
 }
-body header nav a {
+.page > header nav a {
+  margin: 0 20px;
+}
+.page .categoriesNav .btn,
+.page .categoriesNav a {
+  height: 100%;
+  width: 100%;
+  padding: 0 10px;
+  display: block;
   color: #273631;
-  font-family: DearJoe;
-  font-size: 2.8em;
-  margin: 0 50px;
+  font-family: Corinthia;
+  font-size: 2em;
+  font-size: 1.7em;
+}
+.page .categoriesNav .btn.active,
+.page .categoriesNav a.active {
+  color: #BCC935;
 }

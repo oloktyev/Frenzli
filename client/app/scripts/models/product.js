@@ -6,27 +6,26 @@ Frenzli.Product = DS.Model.extend({
 
 Frenzli.Product.FIXTURES = [{
   id: 1,
-  name: 'cat1',
-  hasChildren: true,
-  parentID: null
+  name: 'product1',
+  categoryID: 1
 }, {
   id: 2,
-  name: 'cat2',
-  hasChildren: false,
-  parentID: null
+  name: 'product2',
+  categoryID: 1
 }, {
-  id: 21,
-  name: 'cat2.1',
-  hasChildren: false,
-  parentID: 1
+  id: 3,
+  name: 'product3',
+  categoryID: 1
 }, {
-  id: 22,
-  name: 'cat2.2',
-  hasChildren: true,
-  parentID: 1
-},{
-  id: 23,
-  name: 'cat2.2.1',
-  hasChildren: false,
-  parentID: 22
+  id: 4,
+  name: 'product1',
+  categoryID: 23
+}, {
+  id: 5,
+  name: 'product2',
+  categoryID: 23
+}, {
+  id: 6,
+  name: 'product3',
+  categoryID: 23
 }]

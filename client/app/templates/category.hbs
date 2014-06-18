@@ -1,12 +1,16 @@
 this is category {{model.name}}<br/>
-with products:<br/>
-<ul>
-{{#each product in model.products}}
-<li>
-  {{#link-to "product" product.id}}
-    id:{{product.id}}&nbsp;name:{{product.name}}
-  {{/link-to}}
-</li>
-{{/each}}
-</ul>
-{{outlet}}
+{{#if model.hasChildren}}
+    subcategories:
+    <ul>
+        {{#each category in subcategories}}
+            <li>
+              {{#link-to "category" category.id}}
+                id:{{category.id}}&nbsp;name:{{category.name}}
+              {{/link-to}}
+            </li>
+        {{/each}}
+    </ul>
+{{else}}
+    products:<br/>
+    {{outlet}}
+{{/if}}

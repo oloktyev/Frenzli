@@ -6,27 +6,27 @@ Frenzli.Category = DS.Model.extend({
 
 Frenzli.Category.FIXTURES = [{
   id: 1,
-  name: 'cat1',
+  name: 'Тільда',
   hasChildren: true,
   parentID: null
 }, {
   id: 2,
-  name: 'cat2',
+  name: 'Скрапбукінг',
   hasChildren: false,
   parentID: null
 }, {
   id: 21,
-  name: 'cat2.1',
+  name: 'Печворк',
   hasChildren: false,
   parentID: 1
 }, {
   id: 22,
-  name: 'cat2.2',
+  name: 'Декупаж',
   hasChildren: true,
   parentID: 1
 },{
   id: 23,
-  name: 'cat2.2.1',
+  name: 'Полімерна глина',
   hasChildren: false,
   parentID: 22
 }]

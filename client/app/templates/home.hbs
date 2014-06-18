@@ -1,13 +1,15 @@
+{{ render breadcrumbs }}
 <header>
     <h1>Frenzli</h1>
     <nav>
-        {{#link-to 'home.news'}}Новини{{/link-to}}
-        {{#link-to 'home.blog'}}Блог{{/link-to}}
+        {{#link-to 'home.news' classNames="title"}}Продукти{{/link-to}}
+        {{#link-to 'home.blog' classNames="title"}}Новинки{{/link-to}}
+        {{#link-to 'home.blog' classNames="title"}}Натхнення{{/link-to}}
+        {{#link-to 'home.blog' classNames="title"}}Новини{{/link-to}}
     </nav>
 </header>
 <aside>
-    <header>Categories:</header>
-    <nav>
+    <nav class="categoriesNav">
         {{#view Frenzli.TreeView controllerBinding="categoriesController" contentBinding="categoriesController"}}
         {{/view}}
     </nav>

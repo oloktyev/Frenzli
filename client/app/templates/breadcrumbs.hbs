@@ -1,0 +1,9 @@
+<ul class="breadcrumb">  
+  <li>{{#linkTo 'index'}}<i class="icon-home"></i>Home{{/linkTo}}</li>
+  {{#each segment in breadContent}}
+  <li>
+  <span class="divider">&gt;</span>
+  <a href="javascript://" {{action gotoRoute segment}} >{{segment.name}}</a>
+  </li>
+  {{/each}}
+</ul>
