@@ -22,6 +22,7 @@ Frenzli.BreadcrumbsController = Ember.Controller.extend({
     })
     return segments;
   }.property("controllers.application.currentPath"),
+
   gotoRoute: function(routeOpt) {
     if(routeOpt.context) {
       this.transitionToRoute(routeOpt.routePath, routeOpt.context);
