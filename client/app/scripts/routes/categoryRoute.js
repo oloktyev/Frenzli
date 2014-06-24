@@ -19,5 +19,6 @@ Frenzli.CategoryRoute = Ember.Route.extend({
             return item.get('parentID') === parseInt(model.get('id'), 10);
         });
         controller.set('subcategories', childrenCat);
+        controller.set('categories', categories);
     }
 });

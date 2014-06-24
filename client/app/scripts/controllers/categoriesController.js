@@ -8,6 +8,7 @@ Frenzli.CategoriesController = Ember.ArrayController.extend({
         var model = this.get('model');
         return model.filterBy('parentID', filter);
     }.property('model.@each', 'filterParam'),
+
     actions: {
         routeTo: function(param) {
             this.get('target').transitionTo('category', param);
