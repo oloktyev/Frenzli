@@ -19,7 +19,7 @@ Frenzli.routeToBeadcrumbMap = {
     categories: null,
     category: function(route) {
         var categories = [];
-        var parentID = route.context.get('parentID');
+        var parentID = route.context.get('parentId');
         //get parent categories if any exist
         if (parentID !== null) {
             var parentCategories = getParentCategory(route.context, parentID);
@@ -43,7 +43,7 @@ function getParentCategory(context, parentID) {
         });
         
         parentCategories.push(parentCategory[0].get('name'));
-        return getParentCategory(context, parentCategory[0].get('parentID')).concat(parentCategories);
+        return getParentCategory(context, parentCategory[0].get('parentId')).concat(parentCategories);
     }
     return parentCategories;
 }

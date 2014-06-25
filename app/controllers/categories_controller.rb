@@ -1,7 +1,7 @@
 class CategoriesController < ApplicationController
   def index
     @categories = Category.includes(:parent)
-    render :json => @categories
+    render :json => @categories, root: "categories"
  
     # render :json => @categories.to_json(
     #     :include => [
