@@ -2,7 +2,9 @@ window.Frenzli = Ember.Application.create({
 	LOG_TRANSITIONS: true,
 	LOG_TRANSITIONS_INTERNAL: true
 });
-Frenzli.ApplicationAdapter = DS.FixtureAdapter;
+DS.RESTAdapter.reopen({
+  host: 'http://localhost:3000'
+});
 /* Order and include as you please. */
 require('scripts/store');
 require('scripts/models/*');
