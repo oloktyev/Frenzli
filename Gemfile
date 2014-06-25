@@ -40,4 +40,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise'
-gem 'active_model_serializers'
+gem "active_model_serializers"
