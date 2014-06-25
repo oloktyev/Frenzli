@@ -17,7 +17,7 @@ class Product < ActiveRecord::Base
         :is_available => self.is_available,
         :is_active => self.is_active,
         :image_file_name => self.image_file_name,
-        :category_id => self.category_id
+        :categoryId => self.category_id
     }
   end
 end
