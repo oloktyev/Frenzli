@@ -3,9 +3,6 @@ class ProductsController < ApplicationController
 
   def index
     @products = Product.all
-    respond_to do |format|
-      format.html { render :json => @products}
-      format.json { render :json => @products}
-    end
+    render :json => @products, root: "products"
   end
 end
