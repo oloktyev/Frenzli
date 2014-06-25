@@ -1,11 +1,11 @@
 Frenzli.ProductsController = Ember.ArrayController.extend({
-    categoryID: null,
+    categoryId: null,
     filteredByCategory: function() {
-        var filter = this.categoryID;
+        var filter = this.categoryId;
         if (filter !== null) {
             filter = parseInt(filter, 10);
         }
         var model = this.get('model');
-        return model.filterBy('categoryID', filter);
-    }.property('model.@each', 'categoryID'),
+        return model.filterBy('categoryId', filter);
+    }.property('model.@each', 'categoryId'),
 });
