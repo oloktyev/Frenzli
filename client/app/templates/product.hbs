@@ -1,0 +1,16 @@
+<img {{bind-attr src=image}} {{bind-attr alt=title}} {{bind-attr data-zoom-image=image}}>
+<div>
+    <header>{{title}}</header>
+    <div>
+        <p class="description">
+            {{description}}
+        </p>
+        <p class="availability">
+            <span>Наявність:</span>
+            <span>{{availability}}</span>
+        </p>
+        <p class="price">
+            {{convertedPrice}}
+        </p>
+    </div>
+</div>
