@@ -5,9 +5,16 @@ window.Frenzli = Ember.Application.create({
 DS.RESTAdapter.reopen({
   host: 'http://localhost:3000'
 });
+Frenzli.Router.reopen({
+  location: 'history'
+});
+
 /* Order and include as you please. */
 require('scripts/store');
-require('scripts/models/*');
+require('scripts/models/translation');
+require('scripts/models/category');
+require('scripts/models/product');
+require('scripts/models/language');
 require('scripts/views/*');
 require('scripts/controllers/*');
 require('scripts/components/*');
@@ -29,6 +36,3 @@ require('../bower_components/elevatezoom/*');
     // });
   // }
 // });
-
-
-
