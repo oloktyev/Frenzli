@@ -585,3 +585,1760 @@ ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.0ms)
   Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
   Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (123.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 12:53:21 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"
+Completed 200 OK in 29ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 12:53:47 +0300
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2014-06-25 12:53:47 +0300
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (13.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (117.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 12:54:45 +0300
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"
+Completed 200 OK in 3ms (Views: 0.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-06-25 12:55:11 +0300
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 3ms
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2014-06-25 12:55:11 +0300
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/bundler/gems/active_admin-021843bd4862/app/views/active_admin/devise/shared/_links.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/bundler/gems/active_admin-021843bd4862/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (78.0ms)
+Completed 200 OK in 1651ms (Views: 1619.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-25 12:55:12 +0300
+
+
+Started GET "/javascripts/active_admin.js" for 127.0.0.1 at 2014-06-25 12:55:12 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/active_admin.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (100.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-06-25 12:55:13 +0300
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2014-06-25 12:56:17 +0300
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZgI1axd70zDGvSWSwJ4Gt3vZDIIBwkj8u1xX3w70pBE=", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (1.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."email" = 'admin@example.com'  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `current_sign_in_ip`
+Binary data inserted for `string` type on column `last_sign_in_ip`
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "admin_users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "admin_users"."id" = 1[0m  [["current_sign_in_at", "2014-06-25 09:56:17.667080"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-06-25 09:56:17.667080"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-06-25 09:56:17.669080"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 111ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-06-25 12:56:17 +0300
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/bundler/gems/active_admin-021843bd4862/app/views/active_admin/page/index.html.arb (110.0ms)
+Completed 200 OK in 119ms (Views: 114.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-25 12:56:17 +0300
+
+
+Started GET "/javascripts/active_admin.js" for 127.0.0.1 at 2014-06-25 12:56:17 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/active_admin.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (97.0ms)
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2014-06-25 12:57:56 +0300
+Processing by Admin::CategoriesController#index as HTML
+  [1m[35mAdminUser Load (1.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "categories"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mProduct Load (1.0ms)[0m  SELECT "products".* FROM "products"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mCategoryGroup Load (0.0ms)[0m  SELECT "category_groups".* FROM "category_groups"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/bundler/gems/active_admin-021843bd4862/app/views/active_admin/resource/index.html.arb (149.0ms)
+Completed 200 OK in 164ms (Views: 155.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-25 12:57:56 +0300
+
+
+Started GET "/javascripts/active_admin.js" for 127.0.0.1 at 2014-06-25 12:57:56 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/active_admin.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (103.0ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2014-06-25 12:57:56 +0300
+
+
+Started GET "/admin/categories/new" for 127.0.0.1 at 2014-06-25 12:58:37 +0300
+Processing by Admin::CategoriesController#new as HTML
+  [1m[35mAdminUser Load (0.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1
+  [1m[36mCategoryGroup Load (1.0ms)[0m  [1mSELECT "category_groups".* FROM "category_groups"[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/bundler/gems/active_admin-021843bd4862/app/views/active_admin/resource/new.html.arb (155.0ms)
+Completed 200 OK in 165ms (Views: 161.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-25 12:58:38 +0300
+
+
+Started GET "/javascripts/active_admin.js" for 127.0.0.1 at 2014-06-25 12:58:38 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/active_admin.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (123.0ms)
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2014-06-25 12:58:43 +0300
+Processing by Admin::CategoriesController#index as HTML
+  [1m[36mAdminUser Load (1.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "categories"  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mCategoryGroup Load (0.0ms)[0m  [1mSELECT "category_groups".* FROM "category_groups"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/bundler/gems/active_admin-021843bd4862/app/views/active_admin/resource/index.html.arb (143.0ms)
+Completed 200 OK in 155ms (Views: 149.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/javascripts/active_admin.js" for 127.0.0.1 at 2014-06-25 12:58:43 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/active_admin.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (97.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-25 12:58:43 +0300
+
+
+Started GET "/admin/categories/new" for 127.0.0.1 at 2014-06-25 12:58:45 +0300
+Processing by Admin::CategoriesController#new as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  [1m[35mCategoryGroup Load (0.0ms)[0m  SELECT "category_groups".* FROM "category_groups"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/bundler/gems/active_admin-021843bd4862/app/views/active_admin/resource/new.html.arb (111.0ms)
+Completed 200 OK in 121ms (Views: 118.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/active_admin.js" for 127.0.0.1 at 2014-06-25 12:58:45 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/active_admin.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (96.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-25 12:58:45 +0300
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2014-06-25 12:58:47 +0300
+Processing by Admin::CategoriesController#index as HTML
+  [1m[35mAdminUser Load (1.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "categories"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mProduct Load (0.0ms)[0m  SELECT "products".* FROM "products"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mCategoryGroup Load (0.0ms)[0m  SELECT "category_groups".* FROM "category_groups"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/bundler/gems/active_admin-021843bd4862/app/views/active_admin/resource/index.html.arb (115.0ms)
+Completed 200 OK in 126ms (Views: 123.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/javascripts/active_admin.js" for 127.0.0.1 at 2014-06-25 12:58:47 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/active_admin.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (126.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-25 12:58:47 +0300
+
+
+Started GET "/admin/categories/new" for 127.0.0.1 at 2014-06-25 13:00:25 +0300
+Processing by Admin::CategoriesController#new as HTML
+  [1m[35mAdminUser Load (0.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1
+  [1m[36mCategoryGroup Load (1.0ms)[0m  [1mSELECT "category_groups".* FROM "category_groups"[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/bundler/gems/active_admin-021843bd4862/app/views/active_admin/resource/new.html.arb (138.0ms)
+Completed 200 OK in 149ms (Views: 145.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-25 13:00:25 +0300
+
+
+Started GET "/javascripts/active_admin.js" for 127.0.0.1 at 2014-06-25 13:00:25 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/active_admin.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (98.0ms)
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2014-06-25 13:00:43 +0300
+Processing by Admin::CategoriesController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "categories"  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mCategoryGroup Load (0.0ms)[0m  [1mSELECT "category_groups".* FROM "category_groups"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/bundler/gems/active_admin-021843bd4862/app/views/active_admin/resource/index.html.arb (114.0ms)
+Completed 200 OK in 125ms (Views: 119.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-25 13:00:43 +0300
+
+
+Started GET "/javascripts/active_admin.js" for 127.0.0.1 at 2014-06-25 13:00:43 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/active_admin.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (98.0ms)
+
+
+Started GET "/admin/categories/new" for 127.0.0.1 at 2014-06-25 13:00:47 +0300
+Processing by Admin::CategoriesController#new as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  [1m[35mCategoryGroup Load (0.0ms)[0m  SELECT "category_groups".* FROM "category_groups"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/bundler/gems/active_admin-021843bd4862/app/views/active_admin/resource/new.html.arb (143.0ms)
+Completed 200 OK in 153ms (Views: 150.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/active_admin.js" for 127.0.0.1 at 2014-06-25 13:00:47 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/active_admin.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (31.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (126.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-25 13:00:47 +0300
+
+
+Started POST "/admin/categories" for 127.0.0.1 at 2014-06-25 13:01:16 +0300
+Processing by Admin::CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TzE4Kg74qrdEXyDtKdSzpi4HiczUWcYl1DLc9idBVL0=", "category"=>{"category_group_id"=>"", "parent_id"=>"", "title"=>"тильда", "is_active"=>"1"}, "commit"=>"Create Category"}
+  [1m[35mAdminUser Load (1.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "categories" ("created_at", "is_active", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-06-25 10:01:16.289939"], ["is_active", "t"], ["title", "тильда"], ["updated_at", "2014-06-25 10:01:16.289939"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/admin/categories/1
+Completed 302 Found in 28ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/admin/categories/1" for 127.0.0.1 at 2014-06-25 13:01:16 +0300
+Processing by Admin::CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "active_admin_comments"  WHERE "active_admin_comments"."resource_type" = 'Category' AND "active_admin_comments"."resource_id" = '1' AND "active_admin_comments"."namespace" = 'admin'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "active_admin_comments"  WHERE "active_admin_comments"."resource_type" = 'Category' AND "active_admin_comments"."resource_id" = '1' AND "active_admin_comments"."namespace" = 'admin'[0m
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/bundler/gems/active_admin-021843bd4862/app/views/active_admin/resource/show.html.arb (124.0ms)
+Completed 200 OK in 134ms (Views: 130.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-25 13:01:16 +0300
+
+
+Started GET "/javascripts/active_admin.js" for 127.0.0.1 at 2014-06-25 13:01:16 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/active_admin.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (98.0ms)
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2014-06-25 13:01:24 +0300
+Processing by Admin::CategoriesController#index as HTML
+  [1m[35mAdminUser Load (0.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "categories"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "categories"  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "categories"[0m
+  [1m[35mCACHE (1.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "categories"  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories"   ORDER BY "categories"."id" desc LIMIT 30 OFFSET 0[0m
+  [1m[35mProduct Load (0.0ms)[0m  SELECT "products".* FROM "products"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mCategoryGroup Load (0.0ms)[0m  SELECT "category_groups".* FROM "category_groups"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/bundler/gems/active_admin-021843bd4862/app/views/active_admin/resource/index.html.arb (133.0ms)
+Completed 200 OK in 143ms (Views: 139.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-25 13:01:25 +0300
+
+
+Started GET "/javascripts/active_admin.js" for 127.0.0.1 at 2014-06-25 13:01:25 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/active_admin.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (96.0ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2014-06-25 13:01:25 +0300
+
+
+Started GET "/admin/categories/new" for 127.0.0.1 at 2014-06-25 13:01:27 +0300
+Processing by Admin::CategoriesController#new as HTML
+  [1m[35mAdminUser Load (0.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1
+  [1m[36mCategoryGroup Load (0.0ms)[0m  [1mSELECT "category_groups".* FROM "category_groups"[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/bundler/gems/active_admin-021843bd4862/app/views/active_admin/resource/new.html.arb (114.0ms)
+Completed 200 OK in 125ms (Views: 123.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/active_admin.js" for 127.0.0.1 at 2014-06-25 13:01:27 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/active_admin.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (99.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-25 13:01:27 +0300
+
+
+Started POST "/admin/categories" for 127.0.0.1 at 2014-06-25 13:01:49 +0300
+Processing by Admin::CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TzE4Kg74qrdEXyDtKdSzpi4HiczUWcYl1DLc9idBVL0=", "category"=>{"category_group_id"=>"", "parent_id"=>"1", "title"=>"пэчворк", "is_active"=>"1"}, "commit"=>"Create Category"}
+  [1m[36mAdminUser Load (0.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "categories" ("created_at", "is_active", "parent_id", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-25 10:01:49.455256"], ["is_active", "t"], ["parent_id", 1], ["title", "пэчворк"], ["updated_at", "2014-06-25 10:01:49.455256"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin/categories/2
+Completed 302 Found in 26ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/admin/categories/2" for 127.0.0.1 at 2014-06-25 13:01:49 +0300
+Processing by Admin::CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (0.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "active_admin_comments"  WHERE "active_admin_comments"."resource_type" = 'Category' AND "active_admin_comments"."resource_id" = '2' AND "active_admin_comments"."namespace" = 'admin'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "active_admin_comments"  WHERE "active_admin_comments"."resource_type" = 'Category' AND "active_admin_comments"."resource_id" = '2' AND "active_admin_comments"."namespace" = 'admin'[0m
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/bundler/gems/active_admin-021843bd4862/app/views/active_admin/resource/show.html.arb (111.0ms)
+Completed 200 OK in 121ms (Views: 118.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/active_admin.js" for 127.0.0.1 at 2014-06-25 13:01:49 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/active_admin.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (96.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-25 13:01:49 +0300
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2014-06-25 13:01:52 +0300
+Processing by Admin::CategoriesController#index as HTML
+  [1m[35mAdminUser Load (0.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "categories"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "categories"  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "categories"[0m
+  [1m[35mCACHE (1.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "categories"  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories"   ORDER BY "categories"."id" desc LIMIT 30 OFFSET 0[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mCategoryGroup Load (0.0ms)[0m  [1mSELECT "category_groups".* FROM "category_groups"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/bundler/gems/active_admin-021843bd4862/app/views/active_admin/resource/index.html.arb (132.0ms)
+Completed 200 OK in 142ms (Views: 135.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/javascripts/active_admin.js" for 127.0.0.1 at 2014-06-25 13:01:53 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/active_admin.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (32.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (126.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-25 13:01:53 +0300
+
+
+Started GET "/admin/categories/new" for 127.0.0.1 at 2014-06-25 13:01:55 +0300
+Processing by Admin::CategoriesController#new as HTML
+  [1m[36mAdminUser Load (1.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  [1m[35mCategoryGroup Load (0.0ms)[0m  SELECT "category_groups".* FROM "category_groups"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/bundler/gems/active_admin-021843bd4862/app/views/active_admin/resource/new.html.arb (142.0ms)
+Completed 200 OK in 152ms (Views: 150.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-25 13:01:56 +0300
+
+
+Started GET "/javascripts/active_admin.js" for 127.0.0.1 at 2014-06-25 13:01:56 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/active_admin.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (124.0ms)
+
+
+Started POST "/admin/categories" for 127.0.0.1 at 2014-06-25 13:02:05 +0300
+Processing by Admin::CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TzE4Kg74qrdEXyDtKdSzpi4HiczUWcYl1DLc9idBVL0=", "category"=>{"category_group_id"=>"", "parent_id"=>"1", "title"=>"декупаж", "is_active"=>"1"}, "commit"=>"Create Category"}
+  [1m[35mAdminUser Load (0.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "categories" ("created_at", "is_active", "parent_id", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-06-25 10:02:05.132823"], ["is_active", "t"], ["parent_id", 1], ["title", "декупаж"], ["updated_at", "2014-06-25 10:02:05.132823"]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/admin/categories/3
+Completed 302 Found in 27ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/admin/categories/3" for 127.0.0.1 at 2014-06-25 13:02:05 +0300
+Processing by Admin::CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mAdminUser Load (0.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "active_admin_comments"  WHERE "active_admin_comments"."resource_type" = 'Category' AND "active_admin_comments"."resource_id" = '3' AND "active_admin_comments"."namespace" = 'admin'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "active_admin_comments"  WHERE "active_admin_comments"."resource_type" = 'Category' AND "active_admin_comments"."resource_id" = '3' AND "active_admin_comments"."namespace" = 'admin'
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/bundler/gems/active_admin-021843bd4862/app/views/active_admin/resource/show.html.arb (109.0ms)
+Completed 200 OK in 120ms (Views: 117.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/active_admin.js" for 127.0.0.1 at 2014-06-25 13:02:05 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/active_admin.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (123.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-25 13:02:05 +0300
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2014-06-25 13:02:06 +0300
+Processing by Admin::CategoriesController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "categories"  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "categories"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "categories"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "categories"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mCategory Load (1.0ms)[0m  SELECT  "categories".* FROM "categories"   ORDER BY "categories"."id" desc LIMIT 30 OFFSET 0
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mCategoryGroup Load (0.0ms)[0m  [1mSELECT "category_groups".* FROM "category_groups"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/bundler/gems/active_admin-021843bd4862/app/views/active_admin/resource/index.html.arb (163.0ms)
+Completed 200 OK in 174ms (Views: 168.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/javascripts/active_admin.js" for 127.0.0.1 at 2014-06-25 13:02:07 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/active_admin.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (98.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-25 13:02:07 +0300
+
+
+Started GET "/admin/categories/new" for 127.0.0.1 at 2014-06-25 13:02:09 +0300
+Processing by Admin::CategoriesController#new as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  [1m[35mCategoryGroup Load (1.0ms)[0m  SELECT "category_groups".* FROM "category_groups"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/bundler/gems/active_admin-021843bd4862/app/views/active_admin/resource/new.html.arb (138.0ms)
+Completed 200 OK in 149ms (Views: 144.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/javascripts/active_admin.js" for 127.0.0.1 at 2014-06-25 13:02:10 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/active_admin.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (100.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-25 13:02:10 +0300
+
+
+Started POST "/admin/categories" for 127.0.0.1 at 2014-06-25 13:02:18 +0300
+Processing by Admin::CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TzE4Kg74qrdEXyDtKdSzpi4HiczUWcYl1DLc9idBVL0=", "category"=>{"category_group_id"=>"", "parent_id"=>"3", "title"=>"скрапбукинг", "is_active"=>"1"}, "commit"=>"Create Category"}
+  [1m[35mAdminUser Load (0.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "categories" ("created_at", "is_active", "parent_id", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-06-25 10:02:18.110121"], ["is_active", "t"], ["parent_id", 3], ["title", "скрапбукинг"], ["updated_at", "2014-06-25 10:02:18.110121"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/admin/categories/4
+Completed 302 Found in 26ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/admin/categories/4" for 127.0.0.1 at 2014-06-25 13:02:18 +0300
+Processing by Admin::CategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mAdminUser Load (0.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "active_admin_comments"  WHERE "active_admin_comments"."resource_type" = 'Category' AND "active_admin_comments"."resource_id" = '4' AND "active_admin_comments"."namespace" = 'admin'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "active_admin_comments"  WHERE "active_admin_comments"."resource_type" = 'Category' AND "active_admin_comments"."resource_id" = '4' AND "active_admin_comments"."namespace" = 'admin'
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/bundler/gems/active_admin-021843bd4862/app/views/active_admin/resource/show.html.arb (132.0ms)
+Completed 200 OK in 143ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/active_admin.js" for 127.0.0.1 at 2014-06-25 13:02:18 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/active_admin.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (97.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-25 13:02:18 +0300
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2014-06-25 13:02:20 +0300
+Processing by Admin::CategoriesController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "categories"  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "categories"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "categories"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "categories"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"   ORDER BY "categories"."id" desc LIMIT 30 OFFSET 0
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mProduct Load (0.0ms)[0m  SELECT "products".* FROM "products"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mCategoryGroup Load (0.0ms)[0m  SELECT "category_groups".* FROM "category_groups"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/bundler/gems/active_admin-021843bd4862/app/views/active_admin/resource/index.html.arb (167.0ms)
+Completed 200 OK in 178ms (Views: 174.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-25 13:02:20 +0300
+
+
+Started GET "/javascripts/active_admin.js" for 127.0.0.1 at 2014-06-25 13:02:20 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/active_admin.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (95.0ms)
+
+
+Started GET "/admin/categories/new" for 127.0.0.1 at 2014-06-25 13:02:22 +0300
+Processing by Admin::CategoriesController#new as HTML
+  [1m[35mAdminUser Load (1.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1
+  [1m[36mCategoryGroup Load (0.0ms)[0m  [1mSELECT "category_groups".* FROM "category_groups"[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/bundler/gems/active_admin-021843bd4862/app/views/active_admin/resource/new.html.arb (111.0ms)
+Completed 200 OK in 121ms (Views: 118.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/javascripts/active_admin.js" for 127.0.0.1 at 2014-06-25 13:02:22 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/active_admin.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (97.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-25 13:02:22 +0300
+
+
+Started POST "/admin/categories" for 127.0.0.1 at 2014-06-25 13:02:36 +0300
+Processing by Admin::CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TzE4Kg74qrdEXyDtKdSzpi4HiczUWcYl1DLc9idBVL0=", "category"=>{"category_group_id"=>"", "parent_id"=>"", "title"=>"филтинг", "is_active"=>"1"}, "commit"=>"Create Category"}
+  [1m[36mAdminUser Load (1.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "categories" ("created_at", "is_active", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-06-25 10:02:36.125922"], ["is_active", "t"], ["title", "филтинг"], ["updated_at", "2014-06-25 10:02:36.125922"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin/categories/5
+Completed 302 Found in 28ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/admin/categories/5" for 127.0.0.1 at 2014-06-25 13:02:36 +0300
+Processing by Admin::CategoriesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAdminUser Load (0.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "active_admin_comments"  WHERE "active_admin_comments"."resource_type" = 'Category' AND "active_admin_comments"."resource_id" = '5' AND "active_admin_comments"."namespace" = 'admin'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "active_admin_comments"  WHERE "active_admin_comments"."resource_type" = 'Category' AND "active_admin_comments"."resource_id" = '5' AND "active_admin_comments"."namespace" = 'admin'
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/bundler/gems/active_admin-021843bd4862/app/views/active_admin/resource/show.html.arb (136.0ms)
+Completed 200 OK in 147ms (Views: 144.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/active_admin.js" for 127.0.0.1 at 2014-06-25 13:02:36 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/active_admin.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (101.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-25 13:02:36 +0300
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2014-06-25 13:02:39 +0300
+Processing by Admin::CategoriesController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "categories"  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "categories"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "categories"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "categories"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"   ORDER BY "categories"."id" desc LIMIT 30 OFFSET 0
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mProduct Load (1.0ms)[0m  SELECT "products".* FROM "products"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mCategoryGroup Load (0.0ms)[0m  SELECT "category_groups".* FROM "category_groups"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/bundler/gems/active_admin-021843bd4862/app/views/active_admin/resource/index.html.arb (167.0ms)
+Completed 200 OK in 183ms (Views: 179.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/javascripts/active_admin.js" for 127.0.0.1 at 2014-06-25 13:02:39 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/active_admin.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (98.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-25 13:02:39 +0300
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 13:03:03 +0300
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)[0m
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 2]]
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 3]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 4]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 5]]
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 13:09:13 +0300
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 1]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 2]]
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 3]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 4]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 5]]
+Completed 200 OK in 39ms (Views: 36.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 13:18:42 +0300
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)[0m
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 2]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 3]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 4]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 5]]
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 15:39:52 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 2]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 3]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 4]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 5]]
+Completed 200 OK in 77ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 15:50:29 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 2]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 3]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 4]]
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 5]]
+Completed 200 OK in 97ms (Views: 74.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 15:51:36 +0300
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 1]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 2]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 3]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 4]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 5]]
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 15:58:30 +0300
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 2]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 3]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 4]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 5]]
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 15:59:08 +0300
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 1]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 2]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 3]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 4]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 5]]
+Completed 200 OK in 12ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-06-25 15:59:08 +0300
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.0ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 16:00:21 +0300
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 1]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 2]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 3]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 4]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 5]]
+Completed 200 OK in 11ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 16:00:21 +0300
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 1]]
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 2]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 3]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 4]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 5]]
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-06-25 16:00:21 +0300
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 16:04:17 +0300
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)[0m
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 2]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 3]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 4]]
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 5]]
+Completed 200 OK in 12ms (Views: 8.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 16:04:17 +0300
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 1]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 2]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 3]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 4]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 5]]
+Completed 200 OK in 12ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-06-25 16:04:17 +0300
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.0ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 16:04:58 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 2]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 3]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 4]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 5]]
+Completed 200 OK in 80ms (Views: 58.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 16:04:58 +0300
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 1]]
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 2]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 3]]
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 4]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 5]]
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-06-25 16:04:58 +0300
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (1.0ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 16:06:10 +0300
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 1]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 2]]
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 3]]
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 4]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 5]]
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 16:06:10 +0300
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 2]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 3]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 4]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 5]]
+Completed 200 OK in 12ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 16:06:43 +0300
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 1]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 2]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 3]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 4]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 5]]
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 16:06:43 +0300
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 2]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 3]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 4]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 5]]
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 16:07:31 +0300
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 1]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 2]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 3]]
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 4]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 5]]
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 16:07:31 +0300
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 2]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 3]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 4]]
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 5]]
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 16:08:33 +0300
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 1]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 2]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 3]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 4]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 5]]
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 16:08:33 +0300
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 2]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 3]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 4]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 5]]
+Completed 200 OK in 12ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 16:09:00 +0300
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 1]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 2]]
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 3]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 4]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 5]]
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 16:09:00 +0300
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 2]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 3]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 4]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 5]]
+Completed 200 OK in 36ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-06-25 16:09:05 +0300
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-06-25 16:09:10 +0300
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (1.0ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 16:24:17 +0300
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 1]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 2]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 3]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 4]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 5]]
+Completed 200 OK in 33ms (Views: 30.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 16:24:17 +0300
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 2]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 3]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 4]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 5]]
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-06-25 16:24:17 +0300
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 16:24:56 +0300
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 2]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 3]]
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 4]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 5]]
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 16:24:56 +0300
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 1]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 2]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 3]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 4]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 5]]
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-06-25 16:24:56 +0300
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (1.0ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 16:25:14 +0300
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 1]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 2]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 3]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 4]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 5]]
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 16:25:14 +0300
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 2]]
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 3]]
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 4]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 5]]
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-06-25 16:25:14 +0300
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 21:19:02 +0300
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 1]]
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 2]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 3]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 4]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 5]]
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-25 21:19:02 +0300
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (1, 3)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 1]]
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 2]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 3]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?  [["parent_id", 4]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."parent_id" = ?[0m  [["parent_id", 5]]
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-06-25 21:19:02 +0300
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.0ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-06-25 21:19:35 +0300
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
