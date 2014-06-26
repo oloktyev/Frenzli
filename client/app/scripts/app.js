@@ -13,6 +13,7 @@ require('scripts/controllers/*');
 require('scripts/components/*');
 require('scripts/routes/*');
 require('scripts/router');
+require('../bower_components/elevatezoom/*');
 
 
 

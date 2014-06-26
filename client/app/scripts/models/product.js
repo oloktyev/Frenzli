@@ -1,6 +1,10 @@
 Frenzli.Product = DS.Model.extend({
-    title: DS.attr('string'),
-    categoryId: DS.attr('string')
+    title:       DS.attr('string'),
+    categoryId:  DS.attr('string'),
+    description: DS.attr('string'),
+    image:       DS.attr('string'),
+    price:       DS.attr('number'),
+    isAvailable: DS.attr('boolean')
 });
 
 // Frenzli.Product.FIXTURES = [{

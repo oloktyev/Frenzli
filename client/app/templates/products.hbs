@@ -1,7 +1,12 @@
 <ul>
     {{#each product in model}}
         <li>
-            id:{{product.id}}&nbsp;name:{{product.name}}
+            {{#link-to "product" product.id}}
+                <dt><img {{bind-attr src=product.image}} {{bind-attr alt=product.title}}"></dt>
+                <dt>{{product.title}}</dt>
+                <dd>{{product.description}}</dd>
+            {{/link-to}}
         </li>
     {{/each}}
 </ul>
+{{outlet}}

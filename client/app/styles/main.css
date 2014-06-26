@@ -478,3 +478,16 @@ body {
 .page .categoriesNav a.active {
   color: #BCC935;
 }
+.product > img {
+  width: 30%;
+  min-width: 200px;
+  max-width: 300px;
+  float: left;
+}
+.product > div {
+  float: left;
+  margin: 0 15px;
+}
+.product > div header {
+  font-size: 1.5em;
+}

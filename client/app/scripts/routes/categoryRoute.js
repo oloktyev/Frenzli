@@ -1,22 +1,26 @@
 Frenzli.CategoryRoute = Ember.Route.extend({
     model: function(params) {
-        var model = this.store.find('category', params.category_id);
-        return model;
+        return Ember.RSVP.hash({
+            categories: this.store.find('category'),
+            category: this.store.find('category', params.category_id)
+        });
+        // var model = this.store.find('category', params.category_id);
+        // return model;
     },
     afterModel: function(model, transition) {
-        if (model.get('hasChildren')) {
+        if (model.category.get('hasChildren')) {
             //this.set('allCategories', this.modelFor('categories'));
         } else {
-            this.transitionTo('products');
+            this.transitionTo('products', model.category.get('id'));
         }
     },
     setupController: function(controller, model) {
         //set up model for index controller
-        controller.set('model', model);
+        controller.set('model', model.category);
         var categories = this.modelFor('categories');
-        var id = model.get('id');
-        var childrenCat = categories.filter(function(item, index, self) {
-            return item.get('parentId') === model.get('id');
+        var id = model.category.get('id');
+        var childrenCat = model.categories.filter(function(item, index, self) {
+            return item.get('parentId') === id;
         });
         controller.set('subcategories', childrenCat);
         controller.set('categories', categories);

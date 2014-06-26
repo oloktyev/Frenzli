@@ -1,14 +1,17 @@
 Frenzli.Router.map(function () {
   // Add your routes here
     this.resource('home', function() {
+        //all categories
         this.resource('categories', {path: 'categories/'}, function () {
-            this.resource('category', { path: ':category_id'}, function () {
-                this.resource('products', { path: 'products/' }, function() {
-                    this.route('product', { path: ':product_id' });
-                });
-                this.route('product', { path: 'product/:product_id' });
+        });
+        //subcategories of the category
+        this.resource('category', { path: 'category/:category_id'}, function () {
+            //all products of the category
+            this.resource('products', { path: 'products/' }, function() {
             });
         });
+        
+        this.resource('product', { path: 'product/:product_id' });
         this.route('news');
         this.route('blog');
     });
