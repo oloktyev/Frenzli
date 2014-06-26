@@ -14,7 +14,7 @@ Frenzli.ProductsRoute = Ember.Route.extend({
         var categoryId = this.categoryId;
         controller.set('model', model.filter(function(item, index, enumerable) {
             //filter products by categoryId or return all products from database if no categoryId specified
-            return categoryId === undefined || item.get('categoryId') === parseInt(categoryId, 10);
+            return categoryId === undefined || item.get('categoryId') === categoryId;
         }));
     }
 });
