@@ -4,7 +4,7 @@ Frenzli.ProductController = Ember.ObjectController.extend({
 
     availability: function() {
         var model = this.get('model');
-        var langModel = this.get('languageController.langModel')[0];
+        var langModel = this.get('languageController.langModel');
         var available = langModel.get('productAvailable');
         var unavailable = langModel.get('productUnavailable');
         return model.get('isAvailable') ? available : unavailable;
@@ -12,7 +12,7 @@ Frenzli.ProductController = Ember.ObjectController.extend({
 
     convertedPrice: function() {
         var model = this.get('model');
-        var langModel = this.get('languageController.langModel')[0];
+        var langModel = this.get('languageController.langModel');
         var currency = langModel.get('productCurrency');
         return model.get('price') + currency;
     }.property('price', 'languageController.langModel')

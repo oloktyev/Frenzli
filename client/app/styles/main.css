@@ -424,6 +424,11 @@ body > .home {
   border: 1px solid #cccccc;
   background-color: #ffffff;
 }
+a:visited,
+a:focus,
+a:active {
+  color: inherited;
+}
 button.linkBtn,
 a {
   padding: 0;
@@ -439,6 +444,24 @@ a:hover {
 button.linkBtn:focus,
 a:focus {
   outline: none;
+}
+dd {
+  margin: 0;
+  padding: 0;
+}
+.tileList li {
+  width: 30%;
+  max-width: 300px;
+  padding: 10px;
+  position: relative;
+  tetx-align: left;
+}
+.tileList li img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.tileList li dd {
+  margin: 10px 0;
 }
 body {
   /* background-image: url(@homeBgImage);

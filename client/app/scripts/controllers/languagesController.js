@@ -1,9 +1,10 @@
-Frenzli.LanguagesController = Ember.ArrayController.extend({
+Frenzli.LanguagesController = Ember.ObjectController.extend({
     lang: 'ukr',
     langModel: function() {
         var filter = this.lang;
         var model = this.get('model');
-        return model.filterBy('lang', filter);
+        var filteredModel = model.filterBy('lang', filter);
+        return filteredModel[0];
     }.property('model.@each', 'lang'),
 
     actions: {

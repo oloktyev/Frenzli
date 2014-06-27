@@ -1,4 +1,7 @@
 Frenzli.ProductsController = Ember.ArrayController.extend({
+    needs: ["languages"],
+    languageController: Ember.computed.alias("controllers.languages"),
+
     categoryId: null,
     filteredByCategory: function() {
         var filter = this.categoryId;

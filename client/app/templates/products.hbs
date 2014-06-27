@@ -1,11 +1,12 @@
-<ul>
+<ul class="tileList">
     {{#each product in model}}
         <li>
             {{#link-to "product" product.id}}
                 <dt><img {{bind-attr src=product.image}} {{bind-attr alt=product.title}}"></dt>
                 <dt>{{product.title}}</dt>
-                <dd>{{product.description}}</dd>
+                <dd>{{product.price}}</dd>
             {{/link-to}}
+            <button class="addToCartBtn">{{languageController.langModel.productAddCart}}</button>
         </li>
     {{/each}}
 </ul>
